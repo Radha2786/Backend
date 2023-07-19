@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Get Request</h1>
+    <form action="/user" method="GET">
+        <label for="username">username</label>
+        <input type="text" name="username" id="username">
+
+        <label for="age">age</label>
+        <input type="=number" name="=age" id="age">
+        <button type="submit">send</button>
+<!-- here data is being sent as string -->
+    </form>
+
+    <h1>Post Request</h1>
+
+    <form action="/user" method="POST">
+        <label for="username">username</label>
+        <input type="text" name="username" id="username">
+
+        <label for="age">age</label>
+        <input type="=number" name="=age" id="age">
+        <button type="submit">send</button>
+ <!-- here data is being sent as form data -->
+    </form>
+
+    <!-- action attribute specify ki form ka data kha send hoga and name is working as key -->
+</body>
+</html>
