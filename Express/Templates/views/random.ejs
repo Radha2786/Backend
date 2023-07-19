@@ -1,0 +1,12 @@
+<%- include("./partials/header") %>
+    <%- include("./partials/navbar") %>
+
+        <!-- <h1>This is a Random number <%= Math.floor(Math.random()*100) %> <h1> -->
+        <!-- <h2> Writing text here <%= "Hello World".toUpperCase() %></h1> -->
+        <!-- but generally we don'twrite logics here -->
+        <!-- so we write logics in index.js file and pass that as an object to this ejs file
+             -->
+        <h1>My favrt random number <%= randomNum %>
+        </h1>
+        <!-- receiving object randomNum -->
+        <%- include('./partials/footer') %>

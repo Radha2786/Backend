@@ -1,0 +1,2 @@
+partials contains the components which are gonna used in everyfile so that we don't have to write it again and again
+we use <%- include(path) %>    to include the file
