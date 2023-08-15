@@ -1,0 +1,33 @@
+database = it is basically just the collection of similar types of data 
+
+collection= group of different documents
+document = smallest unique entity  for example 1 particular movie of movies collection
+commands -----> show dbs or show databases
+
+use shop (to use database -- use databasename)
+db.dropDatabase()
+db command = to show current database
+
+// JSON BSON
+// Basic crud  operations 
+// insertion
+
+// READ operation
+// db.collection.find() or db.collection.find({filter options})   ---> to find particular document
+ex= db.movies.find()   ,  db.movies.find({name:'Spiderman'})
+// update 
+// delete
+// operators (for ex: Greater than , less than)   -----Query and Projection Operator 
+ex: less than , greater than , or operator , and operator
+ex = db.movies.find({rating:{$gt:6.5}})
+
+
+-----------------------------Mongoose----------------------
+acts as a layer to interact with server and database as only user can interact through shell but application can not so we need a layer (odm  -- object document mapping) so that our express can interact with database
+ 
+install mongoose and connect it with index file
+
+Model --- mongoose interaction with mongodb is done with the help of model
+          it provides methods to work with that collection or database 
+
+it is basically just a class and it represents collection in a database
