@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        section{
+            width: 460px;
+            margin:30px auto;
+            padding: 16px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.26);
+        }
+    </style>
+</head>
+<body>
+    <h1>Show Product</h1>
+    <section>
+        <p>Product id :<%= product._id %></p>
+        <h3>Product Name: <%=product.name %></h3>
+        <h4>Product Price: $<%=product.price %></h4>
+        <p>Product Description: <%=product.desc %></p>
+    </section>
+</body>
+</html>
